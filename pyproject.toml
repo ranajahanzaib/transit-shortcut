@@ -1,0 +1,19 @@
+[project]
+name = "transitshortcut"
+version = "0.1.0"
+description = "Reproducible shortcut audits for exoplanet classification"
+requires-python = ">=3.12"
+dependencies = ["fastapi>=0.115", "uvicorn>=0.30", "scikit-learn>=1.5", "numpy>=2", "pandas>=2.2", "pyarrow>=18", "scipy>=1.14", "datasets>=3", "huggingface-hub>=0.27", "fsspec[http]>=2024.10", "pydantic>=2", "joblib>=1.4", "typer>=0.15"]
+[project.scripts]
+transitshortcut = "transitshortcut.cli:main"
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.9", "httpx>=0.28"]
+[tool.ruff]
+line-length = 100
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+[tool.hatch.build.targets.wheel]
+packages = ["src/transitshortcut"]

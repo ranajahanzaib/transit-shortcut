@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use TransitShortcut in research or teaching, please cite this software, and the Exoplanet Transit Detection Dataset."
+title: "TransitShortcut"
+version: 0.1.0
+authors:
+  - family-names: Rana
+    given-names: Jahanzaib
+    orcid: "https://orcid.org/0009-0006-7085-0440"
+repository-code: "https://github.com/ranajahanzaib/transit-shortcut"
+license: MIT
+abstract: "TransitShortcut audits shortcut learning in machine learning models for exoplanet transit classification. It contrasts a metadata-only baseline against a raw photometry signal model, quantifies construction artifact prevalence, and executes refit ablations."
+keywords:
+  - exoplanet
+  - astronomy
+  - machine-learning
+  - shortcut-learning
+  - evaluation
+references:
+  - type: data
+    title: "Exoplanet Transit Detection Dataset"
+    authors:
+      - name: "bingbangboom"
+    year: 2026
+    url: "https://huggingface.co/datasets/bingbangboom/exoplanet-transit-detection"
